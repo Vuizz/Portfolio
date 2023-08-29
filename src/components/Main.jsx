@@ -6,16 +6,17 @@ const Main = () => {
   return (
     <div id="main">
       <img
-        className="w-full h-screen absolute object-cover object-left md:scale-x-[-1]"
+        className="w-full h-screen object-cover object-left scale-x-[-1]"
         src="/stairs.jpg"
         alt="/"
       />
-      <div className="w-full h-screen absolute top-0 left-0 bg-black/30 z-5"></div>
-      <div className="w-full h-full flex flex-col justify-center lg:items-center items-center absolute top-50 left-50 z-6">
-        <h1>I'm Theo Karam</h1>
-        <div className="flex">
-          <h2>I'm a</h2>
-          <h2>
+      <div className="w-full h-screen absolute top-0 left-0 bg-white/20">
+        <div className="max-w-[700px] m-auto w-full h-full flex flex-col justify-center lg:items-center items-center absolute top-50 left-50">
+          <h1 className="sm:text-5xl text-4xl font-bold text-gray-800">
+            I'm Theo Karam
+          </h1>
+          <h2 className="flex sm:text-3xl text-2xl pt-4 text-gray-800">
+            I'm a
             <TypeAnimation
               sequence={[
                 "Developer",
@@ -34,13 +35,12 @@ const Main = () => {
               style={{ fontSize: "1em", paddingLeft: "5px" }}
             />
           </h2>
-        </div>
-
-        <div className="flex flex-row">
-          <FaTwitter size={20} className="cursor-pointer ml-2 mr-2" />
-          <FaFacebook size={20} className="cursor-pointer ml-2 mr-2" />
-          <FaInstagram size={20} className="cursor-pointer ml-2 mr-2" />
-          <FaGithub size={20} className="cursor-pointer ml-2 mr-2" />
+          <div className="flex justify-between pt-6 max-w-[200px] w-full">
+            <FaTwitter size={20} className="cursor-pointer" />
+            <FaFacebook size={20} className="cursor-pointer" />
+            <FaInstagram size={20} className="cursor-pointer" />
+            <FaGithub size={20} className="cursor-pointer" />
+          </div>
         </div>
       </div>
     </div>
