@@ -6,8 +6,8 @@ const Main = () => {
   return (
     <div id="main">
       <img
-        className="w-full h-screen object-cover object-left scale-x-[-1]"
-        src="/stairs.jpg"
+        className="w-full h-screen object-left object-cover scale-x-[-1]"
+        src="/stairsv2.jpg"
         alt="/"
       />
       <div className="w-full h-screen absolute top-0 left-0 bg-white/20">
@@ -39,7 +39,13 @@ const Main = () => {
             <FaTwitter size={20} className="cursor-pointer" />
             <FaFacebook size={20} className="cursor-pointer" />
             <FaInstagram size={20} className="cursor-pointer" />
-            <FaGithub size={20} className="cursor-pointer" />
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.github.com/Vuizz"
+            >
+              <FaGithub size={20} className="cursor-pointer" />
+            </a>
           </div>
         </div>
       </div>

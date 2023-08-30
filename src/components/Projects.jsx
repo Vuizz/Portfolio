@@ -23,6 +23,22 @@ const Projects = () => {
       img: youtubeImg,
       title: "Youtube App",
     },
+    {
+      img: googleImg,
+      title: "Google App",
+    },
+    {
+      img: googleImg,
+      title: "Google App",
+    },
+    {
+      img: googleImg,
+      title: "Google App",
+    },
+    {
+      img: googleImg,
+      title: "Google App",
+    },
   ];
 
   return (
@@ -36,7 +52,6 @@ const Projects = () => {
         officia, consectetur sed sapiente rerum dolores nostrum ipsum molestias
         similique quaerat inventore! Dolor.
       </p>
-
       <div className="grid sm:grid-cols-2 gap-12">
         {projects.map((project) => (
           <Project img={project.img} title={project.title} />
